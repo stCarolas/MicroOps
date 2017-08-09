@@ -23,10 +23,8 @@
 не буду поэтому тут повторяться - 
 в конце концов, 
 зачем писать то, что написали до тебя. 
-[Общее описание концепций:]
-(https://wiki.archlinux.org/index.php/X_KeyBoard_extension)
-[Как настроить свою кастомную раскладку]
-(http://hack.org/mc/writings/xkb.html)
+[Общее описание концепций] (https://wiki.archlinux.org/index.php/X_KeyBoard_extension)
+[Как настроить свою кастомную раскладку] (http://hack.org/mc/writings/xkb.html)
 
 ### CapsLock = Control
 
