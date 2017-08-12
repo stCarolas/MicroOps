@@ -1,3 +1,4 @@
+## 1. CapsLock = Escape + Control
 ### Проблематика
 
 Если вы часто и много пользуетесь вимом, 
@@ -74,5 +75,48 @@ C ее помощью многое можно настроить,
 
 В итоге, после двух пунктов у вас убер Caps Lock, работающий и как Esc, если нажат сам по себе, и как Left Control, если нажат вместе с какой-то клавишей.
 
-### Асинхронная смена раскладок клавиатуры
+## 2. Асинхронная смена раскладок клавиатуры
+TBD
+
+## 3. Compose key
+### Проблематика
+Зачастую привычно нажимать какие-то специфические символы в определенной раскладке - 
+к примеру <> я предпочитаю набирать в англ раскладке, 
+и даже не знаю как набрать в русской. 
+Ради одного символа переключать раскладку в англ и обратно - 
+дороговато.
+Но есть специальное решение для таких случаев - 
+compose key.
+Суть в том, что какая-то клавиша выбирается в качестве "языкового" модификатора -
+пока нажата, 
+раскладка считается переключенной,
+как только отпускается -
+раскладка возвращается к изначальной.
+
+### Решение
+
+Получаем список предопределенных вариантов
+```
+$ grep "compose:" /usr/share/X11/xkb/rules/base.lst
+  compose:ralt         Right Alt
+  compose:lwin         Left Win
+  compose:lwin-altgr   3rd level of Left Win
+  compose:rwin         Right Win
+  compose:rwin-altgr   3rd level of Right Win
+  compose:menu         Menu
+  compose:menu-altgr   3rd level of Menu
+  compose:lctrl        Left Ctrl
+  compose:lctrl-altgr  3rd level of Left Ctrl
+  compose:rctrl        Right Ctrl
+  compose:rctrl-altgr  3rd level of Right Ctrl
+  compose:caps         Caps Lock
+  compose:caps-altgr   3rd level of Caps Lock
+  compose:102          &lt;Less/Greater&gt;
+  compose:102-altgr    3rd level of &lt;Less/Greater&gt;
+  compose:paus         Pause
+  compose:prsc         PrtSc
+  compose:sclk         Scroll Lock
+```
+
+
 to be done
